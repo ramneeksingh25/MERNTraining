@@ -1,0 +1,40 @@
+a) Named function:
+  function areapar(){
+    var l=parseInt(prompt("Enter the length:"));
+    var b=parseInt(promt("Enter the breadth:"));
+    console.log("area=",l*b);
+    console.log("parameter",2*(l+b));
+  }
+b) Anonymous Function:
+  function apanon(){
+    var l=parseInt(prompt("Enter the length:"));
+    var b=parseInt(prompt("Enter the breadth:"));
+    var area=function(x,y){
+        return l*b
+    }
+    var parameter=function(x,y){}
+    return {area,parameter};
+    }
+c) Named Function Expression:
+  function apnamed(){
+    var l=parseInt(prompt("Enter the length:"));
+    var b=parseInt(prompt("Enter the breadth:"));
+    var area=function a(){
+        console.log (l*b);}
+    var parameter=function p(){
+        console.log (2*(l+b));
+    }
+    return {area,parameter};
+  }
+d) Arrow Function:
+  function aparrow(){
+    var l=parseInt(prompt("Enter the length:"));
+    var b=parseInt(prompt("Enter the breadth:"));
+    var area=()=>{
+        console.log (l*b);}
+    var parameter=()=>{
+        console.log (2*(l+b));
+    }
+    return {area,parameter};
+}
+  
