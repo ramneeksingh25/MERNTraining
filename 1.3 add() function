@@ -1,0 +1,16 @@
+function add()
+{
+    var sum=0;
+    for (let i = 0; i < arguments.length ; i++) {
+        if (arguments[i] instanceof Array) {
+            var s=0;
+            for (let x = 0; x < arguments[i].length; x++) {
+                s=s+arguments[i][x];                
+            }
+            sum=sum+s;
+        }
+        else
+            sum=sum+(isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return (sum);
+}
