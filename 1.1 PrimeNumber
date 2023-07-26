@@ -1,0 +1,10 @@
+function prime(num) {
+    var p=1;
+    for (let i = 2; i <= (num/2)+1; i++) {
+        if (num%i==0 && num!=2) {
+            p=0;
+            break;
+        }
+    }
+    p==0?console.log(num+" is a Composite number"):console.log(num+" is a Prime number");
+}
