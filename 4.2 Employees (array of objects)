@@ -1,0 +1,6 @@
+employee1={Name:"ramneek",Value:100000};
+employee2={Name:"ujjwal",Value:300000};
+employee3={Name:"sid",Value:120000};
+var employeename=employees.sort((a,b)=>a.Name.localeCompare(b.Name));
+var employeesal=employees.sort((a,b)=>a.Value-b.Value);
+
